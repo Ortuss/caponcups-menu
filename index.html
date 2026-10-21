@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#5a2419">
+  <title>Capon Cups | Menü</title>
+  <style>
+    :root { --cocoa:#9d3266; --berry:#b7354c; --cream:#fff0f6; --caramel:#d48738; --ink:#4a2036; }
+    * { box-sizing:border-box; }
+    body { margin:0; color:var(--ink); background:var(--cream); font-family:Arial, Helvetica, sans-serif; }
+    .hero { min-height:245px; padding:30px 24px 42px; color:white; background:radial-gradient(circle at 84% 15%, #e8a24e 0 8%, transparent 8.5%), radial-gradient(circle at 95% 40%, #d95c64 0 5%, transparent 5.5%), linear-gradient(135deg, #8e245b, #c64c88 58%, #ee91b6); }
+    .brand { letter-spacing:3px; font-size:12px; font-weight:bold; opacity:.85; }
+    h1 { max-width:330px; margin:32px 0 7px; font-family:Georgia, serif; font-size:42px; line-height:1; }
+    .subtitle { margin:0; font-size:15px; opacity:.9; }
+    main { max-width:640px; margin:-22px auto 0; padding:0 16px 36px; }
+    .notice { margin-bottom:24px; padding:14px 16px; border-radius:16px; background:#fff; box-shadow:0 8px 24px #3d180f1c; font-size:14px; }
+    .notice strong { color:var(--berry); }
+    .section-title { display:flex; align-items:center; gap:10px; margin:26px 4px 11px; color:var(--cocoa); font-size:20px; font-family:Georgia, serif; }
+    .section-title::after { content:""; height:1px; flex:1; background:#d9bda5; }
+    .item { display:grid; grid-template-columns:1fr auto; gap:6px 14px; margin:9px 0; padding:17px; border-radius:18px; background:#fff; box-shadow:0 4px 15px #4a1f1610; }
+    .name { font-weight:700; font-size:16px; }
+    .price { color:var(--berry); font-size:17px; font-weight:700; white-space:nowrap; }
+    .description { grid-column:1 / -1; color:#755f57; font-size:13px; line-height:1.45; }
+    .tag { display:inline-block; margin-top:6px; padding:4px 8px; border-radius:99px; background:#fff0dc; color:#a45b19; font-size:11px; font-weight:bold; }
+    .footer { padding:26px 20px 10px; text-align:center; color:#765d54; font-size:12px; }
+    .qr { display:none; max-width:148px; margin:24px auto 0; padding:9px; border-radius:12px; background:#fff; }
+    .qr img { display:block; width:100%; }
+    @media (min-width:680px) { .hero { border-radius:0 0 28px 28px; } main { padding-left:0; padding-right:0; } }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <!-- Dükkan adını burada değiştirin. -->
+    <div class="brand">CAPON CUPS</div>
+    <h1>Tatlı bir mola, tam sizin zevkinizde.</h1>
+    <p class="subtitle">Siparişinizi kasadan verebilirsiniz.</p>
+  </header>
+
+  <main>
+    <div class="notice"><strong>Hoş geldiniz!</strong> Waffle'ınızı dilediğiniz malzemelerle kişiselleştirebilirsiniz.</div>
+    <h2 class="section-title">Büyük Boy Tercihinizde + ₺50</h2>
+    
+    <!-- Ürün eklemek için aşağıdaki .item bloğunu çoğaltın. -->
+    <h2 class="section-title">İmza Waffle'lar</h2>
+    <article class="item">
+      <div class="name">Bubble Klasik Waffle Bowl</div><div class="price">₺200</div>
+      <div class="description">Sütlü Çikolata, Beyaz Çikolata, Muz, Çilek ve Damla Çikolata.<br><span class="tag">EN SEVİLEN</span></div>
+    </article>
+    <article class="item">
+      <div class="name">Bubble Dubai Waffle Bowl</div><div class="price">₺240</div>
+      <div class="description">Sütlü Çikolata, Antep Fıstığı Sos, Çilek, Muz ve Antep Fıstığı Parçacıkları.</div>
+    </article>
+    <article class="item">
+      <div class="name">Bubble Sakura Waffle Bowl</div><div class="price">₺240</div>
+      <div class="description">Beyaz Çikolata, Orman Meyveleri, Çilek, Beyaz Çikolata Sos ve Frambuaz Sos.</div>
+    </article>
+    <article class="item">
+      <div class="name">Bubble Beyaz Waffle Bowl</div><div class="price">₺200</div>
+      <div class="description">Beyaz Çikolata, Muz, Çilek, Beyaz Çikolata Sos ve Dilim Badem.</div>
+    </article>
+    <article class="item">
+      <div class="name">Bubble Frambuaz Waffle Bowl</div><div class="price">₺210</div>
+      <div class="description">Beyaz Çikolata, Frambuaz Sos, Muz, Çilek ve Frambuaz Damla Çikolata.</div>
+    </article>
+    <article class="item">
+      <div class="name">Bubble Banana Waffle Bowl</div><div class="price">₺200</div>
+      <div class="description">Sütlü Çikolata, Beyaz Çikolata, Muz ve Renkli Draje.</div>
+    </article>
+    <article class="item">
+      <div class="name">Bubble Karamel Waffle Bowl</div><div class="price">₺230</div>
+      <div class="description">Sütlü Çikolata, Beya Çikolata, Karamel Sos, Muz ve Çilek.</div>
+    </article>
+    <article class="item">
+      <div class="name">Bubble Çilek Waffle Bowl</div><div class="price">₺200</div>
+      <div class="description">Beyaz Çikolata, Sütlü Çikolata, Çilek Sos, Çilek ve Damla Çikolata.</div>
+    </article>
+    <article class="item">
+      <div class="name">Bubble Lotus Waffle Bowl</div><div class="price">₺240</div>
+      <div class="description">Sütlü Çikolata, Karamel Sos, Lotus Kreması, Muz, Çilek ve Lotus Powder.</div>
+    </article>
+    <article class="item">
+      <div class="name">Bubble Triple Chocolate Waffle Bowl</div><div class="price">₺220</div>
+      <div class="description">Sütlü Çikolata, Bitter Çikolata, Beyaz Çikolata, Muz, Çilek ve Damla Çikolata.</div>
+    </article>
+    <article class="item">
+      <div class="name">Bubble Special Waffle Bowl</div><div class="price">₺230</div>
+      <div class="description">Sütlü Çikolata, Beyaz Çikolata, Muz, Çilek, Antep Fıstığı, Frambuaz Damla Çikolata, Damla Çikolata ve Çakıltaiı.</div>
+    </article>
+    <article class="item">
+      <div class="name">Bubble All Waffle Bowl</div><div class="price">₺240</div>
+      <div class="description">Sütlü Çikolata, Beyaz Çikolata, Çilek, Muz, Kivi ve Renkli Drajeler.</div>
+    </article>
+
+    
+    <h2 class="section-title">İçecekler</h2>
+    <article class="item"><div class="name">Türk Kahvesi</div><div class="price">₺90</div></article>
+    <article class="item"><div class="name">Kola</div><div class="price">₺60</div></article>
+    <article class="item"><div class="name">Soda</div><div class="price">₺40</div></article>
+    <article class="item"><div class="name">Niğde Gazoz</div><div class="price">₺50</div></article>
+    <article class="item"><div class="name">Limonata</div><div class="price">₺80</div></article>
+    <article class="item"><div class="name">Çay</div><div class="price">₺40</div></article>
+    <article class="item"><div class="name">IceTea</div><div class="price">₺70</div></article>
+    <article class="item"><div class="name">Su</div><div class="price">₺20</div></article>
+
+    <!-- Sayfa yayınlandıktan sonra aşağıdaki değeri kendi tam site adresinizle değiştirin. -->
+    <img id="qr-code" class="qr" alt="Menü QR kodu">
+  </main>
+  <footer class="footer">Fiyatlara KDV dahildir. Alerjen bilgisi için lütfen ekibimize danışın.</footer>
+
+  <script>
+    const publishedUrl = "https://ortuss.github.io/capon-menu/"; // Örnek: "https://ornekdukkan.github.io/menu/"
+    if (publishedUrl) {
+      const qrCode = document.getElementById("qr-code");
+      qrCode.src = "https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=" + encodeURIComponent(publishedUrl);
+      qrCode.style.display = "block";
+    }
+  </script>
+</body>
+</html>
