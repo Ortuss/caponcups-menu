@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="tr">
 <head>
@@ -5,116 +6,677 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#5a2419">
   <title>Capon Cups | Menü</title>
+
   <style>
-    :root { --cocoa:#9d3266; --berry:#b7354c; --cream:#fff0f6; --caramel:#d48738; --ink:#4a2036; }
-    * { box-sizing:border-box; }
-    body { margin:0; color:var(--ink); background:var(--cream); font-family:Arial, Helvetica, sans-serif; }
-    .hero { min-height:245px; padding:30px 24px 42px; color:white; background:radial-gradient(circle at 84% 15%, #e8a24e 0 8%, transparent 8.5%), radial-gradient(circle at 95% 40%, #d95c64 0 5%, transparent 5.5%), linear-gradient(135deg, #8e245b, #c64c88 58%, #ee91b6); }
-    .brand { letter-spacing:3px; font-size:12px; font-weight:bold; opacity:.85; }
-    h1 { max-width:330px; margin:32px 0 7px; font-family:Georgia, serif; font-size:42px; line-height:1; }
-    .subtitle { margin:0; font-size:15px; opacity:.9; }
-    main { max-width:640px; margin:-22px auto 0; padding:0 16px 36px; }
-    .notice { margin-bottom:24px; padding:14px 16px; border-radius:16px; background:#fff; box-shadow:0 8px 24px #3d180f1c; font-size:14px; }
-    .notice strong { color:var(--berry); }
-    .section-title { display:flex; align-items:center; gap:10px; margin:26px 4px 11px; color:var(--cocoa); font-size:20px; font-family:Georgia, serif; }
-    .section-title::after { content:""; height:1px; flex:1; background:#d9bda5; }
-    .item { display:grid; grid-template-columns:1fr auto; gap:6px 14px; margin:9px 0; padding:17px; border-radius:18px; background:#fff; box-shadow:0 4px 15px #4a1f1610; }
-    .name { font-weight:700; font-size:16px; }
-    .price { color:var(--berry); font-size:17px; font-weight:700; white-space:nowrap; }
-    .description { grid-column:1 / -1; color:#755f57; font-size:13px; line-height:1.45; }
-    .tag { display:inline-block; margin-top:6px; padding:4px 8px; border-radius:99px; background:#fff0dc; color:#a45b19; font-size:11px; font-weight:bold; }
-    .footer { padding:26px 20px 10px; text-align:center; color:#765d54; font-size:12px; }
-    .qr { display:none; max-width:148px; margin:24px auto 0; padding:9px; border-radius:12px; background:#fff; }
-    .qr img { display:block; width:100%; }
-    @media (min-width:680px) { .hero { border-radius:0 0 28px 28px; } main { padding-left:0; padding-right:0; } }
+    :root {
+      --cocoa: #9d3266;
+      --berry: #b7354c;
+      --cream: #fff0f6;
+      --caramel: #d48738;
+      --ink: #4a2036;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--cream);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .hero {
+      min-height: 245px;
+      padding: 30px 24px 42px;
+      color: white;
+      background:
+        radial-gradient(circle at 84% 15%, #e8a24e 0 8%, transparent 8.5%),
+        radial-gradient(circle at 95% 40%, #d95c64 0 5%, transparent 5.5%),
+        linear-gradient(135deg, #8e245b, #c64c88 58%, #ee91b6);
+    }
+
+    .brand {
+      letter-spacing: 3px;
+      font-size: 12px;
+      font-weight: bold;
+      opacity: .85;
+    }
+
+    h1 {
+      max-width: 330px;
+      margin: 32px 0 7px;
+      font-family: Georgia, serif;
+      font-size: 42px;
+      line-height: 1;
+    }
+
+    .subtitle {
+      margin: 0;
+      font-size: 15px;
+      opacity: .9;
+    }
+
+    main {
+      max-width: 640px;
+      margin: -22px auto 0;
+      padding: 0 16px 36px;
+    }
+
+    .notice {
+      margin-bottom: 24px;
+      padding: 14px 16px;
+      border-radius: 16px;
+      background: #fff;
+      box-shadow: 0 8px 24px #3d180f1c;
+      font-size: 14px;
+    }
+
+    .notice strong {
+      color: var(--berry);
+    }
+
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 26px 4px 11px;
+      color: var(--cocoa);
+      font-size: 20px;
+      font-family: Georgia, serif;
+    }
+
+    .section-title::after {
+      content: "";
+      height: 1px;
+      flex: 1;
+      background: #d9bda5;
+    }
+
+    .item {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 6px 14px;
+      margin: 9px 0;
+      padding: 17px;
+      border-radius: 18px;
+      background: #fff;
+      box-shadow: 0 4px 15px #4a1f1610;
+    }
+
+    .name {
+      font-weight: 700;
+      font-size: 16px;
+    }
+
+    .price {
+      color: var(--berry);
+      font-size: 17px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .description {
+      grid-column: 1 / -1;
+      color: #755f57;
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    .tag {
+      display: inline-block;
+      margin-top: 6px;
+      padding: 4px 8px;
+      border-radius: 99px;
+      background: #fff0dc;
+      color: #a45b19;
+      font-size: 11px;
+      font-weight: bold;
+    }
+
+    .footer {
+      padding: 26px 20px 10px;
+      text-align: center;
+      color: #765d54;
+      font-size: 12px;
+    }
+
+    .qr {
+      display: none;
+      max-width: 148px;
+      margin: 24px auto 0;
+      padding: 9px;
+      border-radius: 12px;
+      background: #fff;
+    }
+
+    .qr img {
+      display: block;
+      width: 100%;
+    }
+
+    /* FOTOĞRAFLI WAFFLE KARTLARI */
+
+    .waffle-item {
+      grid-template-columns: 92px minmax(0, 1fr);
+      gap: 12px;
+      align-items: start;
+    }
+
+    .photo-button {
+      grid-column: 1;
+      grid-row: 1 / 3;
+      width: 92px;
+      height: 92px;
+      padding: 0;
+      border: none;
+      border-radius: 13px;
+      background: #fff0f6;
+      overflow: hidden;
+      cursor: zoom-in;
+    }
+
+    .photo-button img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .2s ease;
+    }
+
+    .photo-button:hover img {
+      transform: scale(1.06);
+    }
+
+    .photo-button:focus-visible,
+    .close-photo:focus-visible {
+      outline: 3px solid var(--berry);
+      outline-offset: 3px;
+    }
+
+    .waffle-details {
+      grid-column: 2;
+      grid-row: 1 / 3;
+      min-width: 0;
+    }
+
+    .waffle-heading {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 6px 10px;
+      margin-bottom: 6px;
+    }
+
+    .waffle-heading .name {
+      flex: 1 1 145px;
+    }
+
+    .waffle-heading .price {
+      flex: 0 0 auto;
+    }
+
+    .waffle-details .description {
+      grid-column: auto;
+    }
+
+    /* TAM EKRAN FOTOĞRAF */
+
+    .photo-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 1000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 14px;
+      padding: 60px 16px 24px;
+      background: rgba(20, 9, 17, .94);
+    }
+
+    .photo-modal.open {
+      display: flex;
+    }
+
+    .photo-modal img {
+      display: block;
+      max-width: 100%;
+      max-height: 75vh;
+      object-fit: contain;
+      border-radius: 12px;
+    }
+
+    .photo-caption {
+      max-width: 90%;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .close-photo {
+      position: absolute;
+      top: 18px;
+      right: 18px;
+      width: 44px;
+      height: 44px;
+      border: none;
+      border-radius: 50%;
+      background: white;
+      color: var(--ink);
+      font-size: 28px;
+      cursor: pointer;
+    }
+
+    body.modal-open {
+      overflow: hidden;
+    }
+
+    @media (min-width: 680px) {
+      .hero {
+        border-radius: 0 0 28px 28px;
+      }
+
+      main {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .waffle-item {
+        grid-template-columns: 78px minmax(0, 1fr);
+        gap: 10px;
+        padding: 13px;
+      }
+
+      .photo-button {
+        width: 78px;
+        height: 78px;
+      }
+
+      .waffle-heading .name {
+        font-size: 14px;
+      }
+
+      .waffle-heading .price {
+        font-size: 15px;
+      }
+    }
   </style>
 </head>
+
 <body>
   <header class="hero">
-    <!-- Dükkan adını burada değiştirin. -->
     <div class="brand">CAPON CUPS</div>
     <h1>Tatlı bir mola, tam sizin zevkinizde.</h1>
     <p class="subtitle">Siparişinizi kasadan verebilirsiniz.</p>
   </header>
 
   <main>
-    <div class="notice"><strong>Hoş geldiniz!</strong> Waffle'ınızı dilediğiniz malzemelerle kişiselleştirebilirsiniz.</div>
+    <div class="notice">
+      <strong>Hoş geldiniz!</strong>
+      Waffle'ınızı dilediğiniz malzemelerle kişiselleştirebilirsiniz.
+    </div>
+
     <h2 class="section-title">Büyük Boy Tercihinizde + ₺50</h2>
-    
-    <!-- Ürün eklemek için aşağıdaki .item bloğunu çoğaltın. -->
+
     <h2 class="section-title">İmza Waffle'lar</h2>
-    <article class="item">
-      <div class="name">Bubble Klasik Waffle Bowl</div><div class="price">₺200</div>
-      <div class="description">Sütlü Çikolata, Beyaz Çikolata, Muz, Çilek ve Damla Çikolata.<br><span class="tag">EN SEVİLEN</span></div>
-    </article>
-    <article class="item">
-      <div class="name">Bubble Dubai Waffle Bowl</div><div class="price">₺240</div>
-      <div class="description">Sütlü Çikolata, Antep Fıstığı Sos, Çilek, Muz ve Antep Fıstığı Parçacıkları.</div>
-    </article>
-    <article class="item">
-      <div class="name">Bubble Sakura Waffle Bowl</div><div class="price">₺240</div>
-      <div class="description">Beyaz Çikolata, Orman Meyveleri, Çilek, Beyaz Çikolata Sos ve Frambuaz Sos.</div>
-    </article>
-    <article class="item">
-      <div class="name">Bubble Beyaz Waffle Bowl</div><div class="price">₺200</div>
-      <div class="description">Beyaz Çikolata, Muz, Çilek, Beyaz Çikolata Sos ve Dilim Badem.</div>
-    </article>
-    <article class="item">
-      <div class="name">Bubble Frambuaz Waffle Bowl</div><div class="price">₺210</div>
-      <div class="description">Beyaz Çikolata, Frambuaz Sos, Muz, Çilek ve Frambuaz Damla Çikolata.</div>
-    </article>
-    <article class="item">
-      <div class="name">Bubble Banana Waffle Bowl</div><div class="price">₺200</div>
-      <div class="description">Sütlü Çikolata, Beyaz Çikolata, Muz ve Renkli Draje.</div>
-    </article>
-    <article class="item">
-      <div class="name">Bubble Karamel Waffle Bowl</div><div class="price">₺230</div>
-      <div class="description">Sütlü Çikolata, Beyaz Çikolata, Karamel Sos, Muz ve Çilek.</div>
-    </article>
-    <article class="item">
-      <div class="name">Bubble Çilek Waffle Bowl</div><div class="price">₺200</div>
-      <div class="description">Beyaz Çikolata, Sütlü Çikolata, Çilek Sos, Çilek ve Damla Çikolata.</div>
-    </article>
-    <article class="item">
-      <div class="name">Bubble Lotus Waffle Bowl</div><div class="price">₺240</div>
-      <div class="description">Sütlü Çikolata, Karamel Sos, Lotus Kreması, Muz, Çilek ve Lotus Powder.</div>
-    </article>
-    <article class="item">
-      <div class="name">Bubble Triple Chocolate Waffle Bowl</div><div class="price">₺220</div>
-      <div class="description">Sütlü Çikolata, Bitter Çikolata, Beyaz Çikolata, Muz, Çilek ve Damla Çikolata.</div>
-    </article>
-    <article class="item">
-      <div class="name">Bubble Special Waffle Bowl</div><div class="price">₺230</div>
-      <div class="description">Sütlü Çikolata, Beyaz Çikolata, Muz, Çilek, Antep Fıstığı, Frambuaz Damla Çikolata, Damla Çikolata ve Çakıltaşı.</div>
-    </article>
-    <article class="item">
-      <div class="name">Bubble All Waffle Bowl</div><div class="price">₺240</div>
-      <div class="description">Sütlü Çikolata, Beyaz Çikolata, Çilek, Muz, Kivi ve Renkli Drajeler.</div>
+
+    <!-- 1 -->
+    <article class="item waffle-item">
+      <button class="photo-button" type="button"
+        aria-label="Bubble Klasik Waffle Bowl fotoğrafını büyüt">
+        <img src="images/klasik-waffle.jpg"
+          alt="Bubble Klasik Waffle Bowl" loading="lazy">
+      </button>
+      <div class="waffle-details">
+        <div class="waffle-heading">
+          <div class="name">Bubble Klasik Waffle Bowl</div>
+          <div class="price">₺200</div>
+        </div>
+        <div class="description">
+          Sütlü Çikolata, Beyaz Çikolata, Muz, Çilek ve Damla Çikolata.
+          <br><span class="tag">EN SEVİLEN</span>
+        </div>
+      </div>
     </article>
 
-    
+    <!-- 2 -->
+    <article class="item waffle-item">
+      <button class="photo-button" type="button"
+        aria-label="Bubble Dubai Waffle Bowl fotoğrafını büyüt">
+        <img src="images/dubai-waffle.jpg"
+          alt="Bubble Dubai Waffle Bowl" loading="lazy">
+      </button>
+      <div class="waffle-details">
+        <div class="waffle-heading">
+          <div class="name">Bubble Dubai Waffle Bowl</div>
+          <div class="price">₺240</div>
+        </div>
+        <div class="description">
+          Sütlü Çikolata, Antep Fıstığı Sos, Çilek, Muz ve Antep Fıstığı Parçacıkları.
+        </div>
+      </div>
+    </article>
+
+    <!-- 3 -->
+    <article class="item waffle-item">
+      <button class="photo-button" type="button"
+        aria-label="Bubble Sakura Waffle Bowl fotoğrafını büyüt">
+        <img src="images/sakura-waffle.jpg"
+          alt="Bubble Sakura Waffle Bowl" loading="lazy">
+      </button>
+      <div class="waffle-details">
+        <div class="waffle-heading">
+          <div class="name">Bubble Sakura Waffle Bowl</div>
+          <div class="price">₺240</div>
+        </div>
+        <div class="description">
+          Beyaz Çikolata, Orman Meyveleri, Çilek, Beyaz Çikolata Sos ve Frambuaz Sos.
+        </div>
+      </div>
+    </article>
+
+    <!-- 4 -->
+    <article class="item waffle-item">
+      <button class="photo-button" type="button"
+        aria-label="Bubble Beyaz Waffle Bowl fotoğrafını büyüt">
+        <img src="images/beyaz-waffle.jpg"
+          alt="Bubble Beyaz Waffle Bowl" loading="lazy">
+      </button>
+      <div class="waffle-details">
+        <div class="waffle-heading">
+          <div class="name">Bubble Beyaz Waffle Bowl</div>
+          <div class="price">₺200</div>
+        </div>
+        <div class="description">
+          Beyaz Çikolata, Muz, Çilek, Beyaz Çikolata Sos ve Dilim Badem.
+        </div>
+      </div>
+    </article>
+
+    <!-- 5 -->
+    <article class="item waffle-item">
+      <button class="photo-button" type="button"
+        aria-label="Bubble Frambuaz Waffle Bowl fotoğrafını büyüt">
+        <img src="images/frambuaz-waffle.jpg"
+          alt="Bubble Frambuaz Waffle Bowl" loading="lazy">
+      </button>
+      <div class="waffle-details">
+        <div class="waffle-heading">
+          <div class="name">Bubble Frambuaz Waffle Bowl</div>
+          <div class="price">₺210</div>
+        </div>
+        <div class="description">
+          Beyaz Çikolata, Frambuaz Sos, Muz, Çilek ve Frambuaz Damla Çikolata.
+        </div>
+      </div>
+    </article>
+
+    <!-- 6 -->
+    <article class="item waffle-item">
+      <button class="photo-button" type="button"
+        aria-label="Bubble Banana Waffle Bowl fotoğrafını büyüt">
+        <img src="images/banana-waffle.jpg"
+          alt="Bubble Banana Waffle Bowl" loading="lazy">
+      </button>
+      <div class="waffle-details">
+        <div class="waffle-heading">
+          <div class="name">Bubble Banana Waffle Bowl</div>
+          <div class="price">₺200</div>
+        </div>
+        <div class="description">
+          Sütlü Çikolata, Beyaz Çikolata, Muz ve Renkli Draje.
+        </div>
+      </div>
+    </article>
+
+    <!-- 7 -->
+    <article class="item waffle-item">
+      <button class="photo-button" type="button"
+        aria-label="Bubble Karamel Waffle Bowl fotoğrafını büyüt">
+        <img src="images/karamel-waffle.jpg"
+          alt="Bubble Karamel Waffle Bowl" loading="lazy">
+      </button>
+      <div class="waffle-details">
+        <div class="waffle-heading">
+          <div class="name">Bubble Karamel Waffle Bowl</div>
+          <div class="price">₺230</div>
+        </div>
+        <div class="description">
+          Sütlü Çikolata, Beyaz Çikolata, Karamel Sos, Muz ve Çilek.
+        </div>
+      </div>
+    </article>
+
+    <!-- 8 -->
+    <article class="item waffle-item">
+      <button class="photo-button" type="button"
+        aria-label="Bubble Çilek Waffle Bowl fotoğrafını büyüt">
+        <img src="images/cilek-waffle.jpg"
+          alt="Bubble Çilek Waffle Bowl" loading="lazy">
+      </button>
+      <div class="waffle-details">
+        <div class="waffle-heading">
+          <div class="name">Bubble Çilek Waffle Bowl</div>
+          <div class="price">₺200</div>
+        </div>
+        <div class="description">
+          Beyaz Çikolata, Sütlü Çikolata, Çilek Sos, Çilek ve Damla Çikolata.
+        </div>
+      </div>
+    </article>
+
+    <!-- 9 -->
+    <article class="item waffle-item">
+      <button class="photo-button" type="button"
+        aria-label="Bubble Lotus Waffle Bowl fotoğrafını büyüt">
+        <img src="images/lotus-waffle.jpg"
+          alt="Bubble Lotus Waffle Bowl" loading="lazy">
+      </button>
+      <div class="waffle-details">
+        <div class="waffle-heading">
+          <div class="name">Bubble Lotus Waffle Bowl</div>
+          <div class="price">₺240</div>
+        </div>
+        <div class="description">
+          Sütlü Çikolata, Karamel Sos, Lotus Kreması, Muz, Çilek ve Lotus Powder.
+        </div>
+      </div>
+    </article>
+
+    <!-- 10 -->
+    <article class="item waffle-item">
+      <button class="photo-button" type="button"
+        aria-label="Bubble Triple Chocolate Waffle Bowl fotoğrafını büyüt">
+        <img src="images/triple-chocolate-waffle.jpg"
+          alt="Bubble Triple Chocolate Waffle Bowl" loading="lazy">
+      </button>
+      <div class="waffle-details">
+        <div class="waffle-heading">
+          <div class="name">Bubble Triple Chocolate Waffle Bowl</div>
+          <div class="price">₺220</div>
+        </div>
+        <div class="description">
+          Sütlü Çikolata, Bitter Çikolata, Beyaz Çikolata, Muz, Çilek ve Damla Çikolata.
+        </div>
+      </div>
+    </article>
+
+    <!-- 11 -->
+    <article class="item waffle-item">
+      <button class="photo-button" type="button"
+        aria-label="Bubble Special Waffle Bowl fotoğrafını büyüt">
+        <img src="images/special-waffle.jpg"
+          alt="Bubble Special Waffle Bowl" loading="lazy">
+      </button>
+      <div class="waffle-details">
+        <div class="waffle-heading">
+          <div class="name">Bubble Special Waffle Bowl</div>
+          <div class="price">₺230</div>
+        </div>
+        <div class="description">
+          Sütlü Çikolata, Beyaz Çikolata, Muz, Çilek, Antep Fıstığı, Frambuaz Damla Çikolata, Damla Çikolata ve Çakıltaşı.
+        </div>
+      </div>
+    </article>
+
+    <!-- 12 -->
+    <article class="item waffle-item">
+      <button class="photo-button" type="button"
+        aria-label="Bubble All Waffle Bowl fotoğrafını büyüt">
+        <img src="images/all-waffle.jpg"
+          alt="Bubble All Waffle Bowl" loading="lazy">
+      </button>
+      <div class="waffle-details">
+        <div class="waffle-heading">
+          <div class="name">Bubble All Waffle Bowl</div>
+          <div class="price">₺240</div>
+        </div>
+        <div class="description">
+          Sütlü Çikolata, Beyaz Çikolata, Çilek, Muz, Kivi ve Renkli Drajeler.
+        </div>
+      </div>
+    </article>
+
     <h2 class="section-title">İçecekler</h2>
-    <article class="item"><div class="name">Türk Kahvesi</div><div class="price">₺90</div></article>
-    <article class="item"><div class="name">Kola</div><div class="price">₺60</div></article>
-    <article class="item"><div class="name">Soda</div><div class="price">₺40</div></article>
-    <article class="item"><div class="name">Niğde Gazoz</div><div class="price">₺50</div></article>
-    <article class="item"><div class="name">Limonata</div><div class="price">₺80</div></article>
-    <article class="item"><div class="name">Çay</div><div class="price">₺40</div></article>
-    <article class="item"><div class="name">IceTea</div><div class="price">₺70</div></article>
-    <article class="item"><div class="name">Su</div><div class="price">₺20</div></article>
 
-    <!-- Sayfa yayınlandıktan sonra aşağıdaki değeri kendi tam site adresinizle değiştirin. -->
+    <article class="item">
+      <div class="name">Türk Kahvesi</div>
+      <div class="price">₺90</div>
+    </article>
+
+    <article class="item">
+      <div class="name">Kola</div>
+      <div class="price">₺60</div>
+    </article>
+
+    <article class="item">
+      <div class="name">Soda</div>
+      <div class="price">₺40</div>
+    </article>
+
+    <article class="item">
+      <div class="name">Niğde Gazoz</div>
+      <div class="price">₺50</div>
+    </article>
+
+    <article class="item">
+      <div class="name">Limonata</div>
+      <div class="price">₺80</div>
+    </article>
+
+    <article class="item">
+      <div class="name">Çay</div>
+      <div class="price">₺40</div>
+    </article>
+
+    <article class="item">
+      <div class="name">IceTea</div>
+      <div class="price">₺70</div>
+    </article>
+
+    <article class="item">
+      <div class="name">Su</div>
+      <div class="price">₺20</div>
+    </article>
+
     <img id="qr-code" class="qr" alt="Menü QR kodu">
   </main>
-  <footer class="footer">Fiyatlara KDV dahildir. Alerjen bilgisi için lütfen ekibimize danışın.</footer>
+
+  <footer class="footer">
+    Fiyatlara KDV dahildir. Alerjen bilgisi için lütfen ekibimize danışın.
+  </footer>
+
+  <!-- FOTOĞRAF BÜYÜTME PENCERESİ -->
+  <div class="photo-modal" id="photo-modal"
+    role="dialog" aria-modal="true"
+    aria-label="Büyütülmüş ürün fotoğrafı"
+    aria-hidden="true">
+
+    <button class="close-photo" id="close-photo"
+      type="button" aria-label="Fotoğrafı kapat">
+      &times;
+    </button>
+
+    <img id="large-photo" src="" alt="">
+    <div class="photo-caption" id="photo-caption"></div>
+  </div>
 
   <script>
-    const publishedUrl = "https://caponcups-menu.vercel.app"; // Örnek: "https://ornekdukkan.github.io/menu/"
+    // QR KOD
+    const publishedUrl = "https://caponcups-menu.vercel.app";
+
     if (publishedUrl) {
       const qrCode = document.getElementById("qr-code");
-      qrCode.src = "https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=" + encodeURIComponent(publishedUrl);
+
+      qrCode.src =
+        "https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=" +
+        encodeURIComponent(publishedUrl);
+
       qrCode.style.display = "block";
     }
+
+    // FOTOĞRAF BÜYÜTME
+    const modal = document.getElementById("photo-modal");
+    const largePhoto = document.getElementById("large-photo");
+    const caption = document.getElementById("photo-caption");
+    const closeButton = document.getElementById("close-photo");
+
+    let previousFocus = null;
+
+    function closePhoto() {
+      modal.classList.remove("open");
+      modal.setAttribute("aria-hidden", "true");
+      largePhoto.removeAttribute("src");
+      document.body.classList.remove("modal-open");
+
+      if (previousFocus) {
+        previousFocus.focus();
+      }
+    }
+
+    document.querySelectorAll(".photo-button").forEach(button => {
+      button.addEventListener("click", () => {
+        const img = button.querySelector("img");
+
+        previousFocus = button;
+        largePhoto.src = img.src;
+        largePhoto.alt = img.alt;
+        caption.textContent = img.alt;
+
+        modal.classList.add("open");
+        modal.setAttribute("aria-hidden", "false");
+        document.body.classList.add("modal-open");
+
+        closeButton.focus();
+      });
+    });
+
+    closeButton.addEventListener("click", closePhoto);
+
+    modal.addEventListener("click", event => {
+      if (event.target === modal || event.target === largePhoto) {
+        closePhoto();
+      }
+    });
+
+    document.addEventListener("keydown", event => {
+      if (!modal.classList.contains("open")) return;
+
+      if (event.key === "Escape") {
+        closePhoto();
+      }
+
+      if (event.key === "Tab") {
+        event.preventDefault();
+        closeButton.focus();
+      }
+    });
   </script>
 </body>
 </html>
